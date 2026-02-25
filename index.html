@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NALU — A Voz da Nova Era</title>
+  <meta name="description"
+    content="Site oficial da cantora Nalu. Sertanejo pop com muito sentimento. Ouça os últimos lançamentos e fique por dentro das próximas datas." />
+  <meta property="og:title" content="NALU — A Voz da Nova Era" />
+  <meta property="og:description" content="Ouça o novo álbum 'Empresta Saudade' e descubra o mundo da Nalu." />
+  <meta property="og:image" content="assets/hero.png" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ══════════════════════════════════
+       FLOATING NAV
+  ══════════════════════════════════ -->
+  <nav class="nav" id="navbar">
+    <div class="nav__logo">NALU</div>
+    <ul class="nav__links">
+      <li><a href="#musica">Música</a></li>
+      <li><a href="#visuals">Visuals</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#shows">Shows</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+    <a href="https://open.spotify.com/intl-pt/artist/446zGftjfP5j2EfU2kc4OM" target="_blank"
+      class="btn btn--sm btn--glow">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+        <path
+          d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z" />
+      </svg>
+      Ouça Agora
+    </a>
+    <button class="nav__hamburger" id="menuToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#musica" class="mobile-link">Música</a></li>
+      <li><a href="#visuals" class="mobile-link">Visuals</a></li>
+      <li><a href="#sobre" class="mobile-link">Sobre</a></li>
+      <li><a href="#shows" class="mobile-link">Shows</a></li>
+      <li><a href="#contato" class="mobile-link">Contato</a></li>
+    </ul>
+  </div>
+
+  <!-- ══════════════════════════════════
+       HERO — THE VIBE
+  ══════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero__parallax" id="heroParallax">
+      <img src="https://i.scdn.co/image/ab6761610000e5eb14be0ce8baa49ed3d97db0d3" alt="Nalu — cantora sertanejo pop"
+        class="hero__img" crossorigin="anonymous" />
+      <div class="hero__overlay"></div>
+    </div>
+
+    <!-- Floating orbs -->
+    <div class="orb orb--1"></div>
+    <div class="orb orb--2"></div>
+    <div class="orb orb--3"></div>
+
+    <div class="hero__content">
+      <div class="hero__tag animate-in">★ Nova Era ★</div>
+      <h1 class="hero__title animate-in delay-1">NALU</h1>
+      <p class="hero__subtitle animate-in delay-2">A voz que faz o coração sentir.</p>
+      <div class="hero__cta animate-in delay-3">
+        <a href="https://open.spotify.com/intl-pt/artist/446zGftjfP5j2EfU2kc4OM" target="_blank"
+          class="btn btn--primary btn--glow">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z" />
+          </svg>
+          OUÇA AGORA
+        </a>
+        <a href="https://www.instagram.com/nalucantora/" target="_blank" class="btn btn--outline">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+          </svg>
+          @nalucantora
+        </a>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator">
+      <div class="scroll-indicator__line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       MUSIC — SPOTIFY INTEGRATION
+  ══════════════════════════════════ -->
+  <section class="section music" id="musica">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">🎵 Ouça</span>
+        <h2 class="section__title">Últimos <span class="gradient-text">Lançamentos</span></h2>
+        <p class="section__sub">Deixa o som te levar.</p>
+      </div>
+
+      <div class="music__grid">
+        <!-- Main player — ÚLTIMO LANÇAMENTO (Sem Esse Coração) -->
+        <div class="glass-card music__featured">
+          <div class="music__featured-label">✦ Último Lançamento</div>
+          <iframe style="border-radius:16px"
+            src="https://open.spotify.com/embed/album/6lpamJMEAKmTo9g4bAGreJ?utm_source=generator&theme=0" width="100%"
+            height="380" frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"
+            title="Spotify player — Sem Esse Coração / Inventor dos Amores"></iframe>
+        </div>
+
+        <!-- Singles grid — ordem cronológica decrescente -->
+        <div class="music__singles">
+          <div class="glass-card music__single">
+            <iframe style="border-radius:12px"
+              src="https://open.spotify.com/embed/album/5se5tbPJtGN3kH01cLg48j?utm_source=generator&theme=0"
+              width="100%" height="152" frameBorder="0" allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"
+              title="Spotify player — Tentativa e Erro"></iframe>
+          </div>
+          <div class="glass-card music__single">
+            <iframe style="border-radius:12px"
+              src="https://open.spotify.com/embed/album/1AwzhE5JZa7YkGpnNoafR2?utm_source=generator&theme=0"
+              width="100%" height="152" frameBorder="0" allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"
+              title="Spotify player — Empresta Saudade (Álbum)"></iframe>
+          </div>
+          <div class="glass-card music__single">
+            <iframe style="border-radius:12px"
+              src="https://open.spotify.com/embed/album/2SvXpcyhkpGjAZ1hn2YNyw?utm_source=generator&theme=0"
+              width="100%" height="152" frameBorder="0" allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"
+              title="Spotify player — Tiro no Escuro"></iframe>
+          </div>
+        </div>
+      </div>
+
+      <div class="music__cta">
+        <a href="https://open.spotify.com/intl-pt/artist/446zGftjfP5j2EfU2kc4OM" target="_blank"
+          class="btn btn--primary btn--glow btn--lg">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z" />
+          </svg>
+          Ver Todos no Spotify
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       VISUALS — INSTAGRAM FEED
+  ══════════════════════════════════ -->
+  <section class="section visuals" id="visuals">
+    <div class="visuals__bg">
+      <img src="https://i.scdn.co/image/ab67616d0000b273b65bded4d1648a52b83101ac" alt="" class="visuals__bg-img" />
+      <div class="visuals__bg-overlay"></div>
+    </div>
+
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">📸 Feed</span>
+        <h2 class="section__title">O Universo <span class="gradient-text">da Nalu</span></h2>
+        <p class="section__sub">Moda, lifestyle e bastidores.</p>
+      </div>
+
+      <div class="insta-grid">
+        <!-- Foto artista (destaque grande) -->
+        <a href="https://www.instagram.com/nalucantora/" target="_blank" class="insta-item insta-item--large"
+          aria-label="Ver perfil do Instagram">
+          <img src="https://i.scdn.co/image/ab6761610000e5eb14be0ce8baa49ed3d97db0d3" alt="Nalu — foto oficial"
+            loading="lazy" />
+          <div class="insta-item__overlay">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="white">
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+            </svg>
+            <span>Ver mais</span>
+          </div>
+        </a>
+        <!-- Sem Esse Coração / Inventor dos Amores -->
+        <a href="https://www.instagram.com/nalucantora/" target="_blank" class="insta-item"
+          aria-label="Sem Esse Coração">
+          <img src="https://i.scdn.co/image/ab67616d0000b27395f9e8e843f91f75e4e719ce" alt="Nalu — Sem Esse Coração"
+            loading="lazy" />
+          <div class="insta-item__overlay">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+            </svg>
+          </div>
+        </a>
+        <!-- Empresta Saudade -->
+        <a href="https://www.instagram.com/nalucantora/" target="_blank" class="insta-item"
+          aria-label="Empresta Saudade">
+          <img src="https://i.scdn.co/image/ab67616d0000b273b65bded4d1648a52b83101ac" alt="Nalu — Empresta Saudade"
+            loading="lazy" />
+          <div class="insta-item__overlay">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+            </svg>
+          </div>
+        </a>
+        <!-- Tentativa e Erro -->
+        <a href="https://www.instagram.com/nalucantora/" target="_blank" class="insta-item"
+          aria-label="Tentativa e Erro">
+          <img src="https://i.scdn.co/image/ab67616d0000b273c5edb0cf4cae4a978a0299b2" alt="Nalu — Tentativa e Erro"
+            loading="lazy" />
+          <div class="insta-item__overlay">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+            </svg>
+          </div>
+        </a>
+      </div>
+
+      <div class="visuals__cta">
+        <a href="https://www.instagram.com/nalucantora/" target="_blank" class="btn btn--outline btn--lg">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+          </svg>
+          Seguir @nalucantora
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       ABOUT — A VOZ
+  ══════════════════════════════════ -->
+  <section class="section about" id="sobre">
+    <div class="container">
+      <div class="about__inner">
+        <div class="about__image-wrap">
+          <div class="about__image-glow"></div>
+          <img src="https://i.scdn.co/image/ab67616d0000b273b65bded4d1648a52b83101ac" alt="Nalu — Empresta Saudade"
+            class="about__img" loading="lazy" />
+          <div class="about__image-badge glass-card">
+            <span class="about__badge-icon">🎙️</span>
+            <div>
+              <strong>Empresta Saudade</strong>
+              <small>Álbum 2025</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="about__content">
+          <span class="section__tag">✦ A Voz</span>
+          <h2 class="section__title">Quem é a <span class="gradient-text">Nalu?</span></h2>
+          <p class="about__text">
+            Nalu é a cantora de sertanejo pop que chegou para conquistar o Brasil. Com uma voz cheia de sentimento e
+            letras que falam direto ao coração, ela une a autenticidade do sertanejo com a leveza do pop moderno.
+          </p>
+          <p class="about__text">
+            Do álbum <em>Empresta Saudade</em> ao último single <em>Sem Esse Coração</em>, cada música é uma história
+            vivida — intensa, verdadeira e inesquecível. Sertanejo que dá vontade de ouvir no repeat. 🎶
+          </p>
+          <p class="about__text">
+            A nova era do sertanejo pop começou. E ela só está no começo. 🚀
+          </p>
+          <div class="about__stats">
+            <div class="stat glass-card">
+              <span class="stat__num">2025</span>
+              <span class="stat__label">Ano de Estreia</span>
+            </div>
+            <div class="stat glass-card">
+              <span class="stat__num">4+</span>
+              <span class="stat__label">Lançamentos</span>
+            </div>
+            <div class="stat glass-card">
+              <span class="stat__num">🔥</span>
+              <span class="stat__label">Em Ascensão</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       SHOWS — AGENDA
+  ══════════════════════════════════ -->
+  <section class="section shows" id="shows">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">🎤 Ao Vivo</span>
+        <h2 class="section__title">Próximas <span class="gradient-text">Datas</span></h2>
+        <p class="section__sub">Experiência ao vivo que vai ficar na memória.</p>
+      </div>
+
+      <div class="shows__list">
+        <div class="show-item glass-card reveal">
+          <div class="show-item__date">
+            <span class="show-item__day">15</span>
+            <span class="show-item__month">MAR</span>
+          </div>
+          <div class="show-item__info">
+            <h3 class="show-item__name">São Paulo — Club Disco</h3>
+            <p class="show-item__details">Rua Augusta, 123 · Abertura às 21h</p>
+          </div>
+          <div class="show-item__badge">São Paulo · SP</div>
+          <a href="#contato" class="btn btn--sm btn--primary btn--glow show-item__btn">Ingressos</a>
+        </div>
+
+        <div class="show-item glass-card reveal">
+          <div class="show-item__date">
+            <span class="show-item__day">22</span>
+            <span class="show-item__month">MAR</span>
+          </div>
+          <div class="show-item__info">
+            <h3 class="show-item__name">Rio de Janeiro — Circo Voador</h3>
+            <p class="show-item__details">Lapa, Rio de Janeiro · Abertura às 20h</p>
+          </div>
+          <div class="show-item__badge">Rio de Janeiro · RJ</div>
+          <a href="#contato" class="btn btn--sm btn--primary btn--glow show-item__btn">Ingressos</a>
+        </div>
+
+        <div class="show-item glass-card reveal">
+          <div class="show-item__date">
+            <span class="show-item__day">05</span>
+            <span class="show-item__month">ABR</span>
+          </div>
+          <div class="show-item__info">
+            <h3 class="show-item__name">Belo Horizonte — Cine Theatro Brasil</h3>
+            <p class="show-item__details">Praça Sete · Abertura às 20h30</p>
+          </div>
+          <div class="show-item__badge">Belo Horizonte · MG</div>
+          <a href="#contato" class="btn btn--sm btn--primary btn--glow show-item__btn">Ingressos</a>
+        </div>
+
+        <div class="show-item glass-card reveal">
+          <div class="show-item__date">
+            <span class="show-item__day">19</span>
+            <span class="show-item__month">ABR</span>
+          </div>
+          <div class="show-item__info">
+            <h3 class="show-item__name">Porto Alegre — Teatro do Bourbon Country</h3>
+            <p class="show-item__details">Av. Túlio de Rose · Abertura às 21h</p>
+          </div>
+          <div class="show-item__badge">Porto Alegre · RS</div>
+          <a href="#contato" class="btn btn--sm btn--outline show-item__btn">Em Breve</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       MAILING LIST
+  ══════════════════════════════════ -->
+  <section class="section mailing" id="contato">
+    <div class="mailing__bg">
+      <div class="orb orb--4"></div>
+      <div class="orb orb--5"></div>
+    </div>
+    <div class="container">
+      <div class="mailing__inner glass-card">
+        <div class="mailing__icon">💌</div>
+        <h2 class="mailing__title">FAÇA PARTE DO<br /><span class="gradient-text">MUNDO DA NALU</span></h2>
+        <p class="mailing__sub">Novidades, datas exclusivas e conteúdo que só os fãs recebem.</p>
+        <form class="mailing__form" id="mailingForm" onsubmit="handleSubmit(event)">
+          <div class="mailing__input-wrap">
+            <input type="email" id="emailInput" placeholder="seu@email.com" class="mailing__input" required
+              autocomplete="email" />
+            <button type="submit" class="btn btn--primary btn--glow mailing__btn">
+              ENTRAR
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </button>
+          </div>
+          <p class="mailing__fine">Sem spam. Apenas o que importa. ✨</p>
+        </form>
+        <div class="mailing__success" id="mailingSuccess" style="display:none">
+          <span class="mailing__success-icon">🎉</span>
+          <p><strong>Bem-vindo ao mundo da Nalu!</strong><br />Fique de olho no seu e-mail.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       FOOTER
+  ══════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <div class="footer__logo">NALU</div>
+          <p class="footer__tagline">A voz que faz o coração sentir.</p>
+        </div>
+
+        <div class="footer__social">
+          <a href="https://open.spotify.com/intl-pt/artist/446zGftjfP5j2EfU2kc4OM" target="_blank"
+            class="social-icon social-icon--spotify" aria-label="Spotify">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z" />
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/nalucantora/" target="_blank" class="social-icon social-icon--instagram"
+            aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+            </svg>
+          </a>
+          <a href="https://www.tiktok.com/@nalucantora" target="_blank" class="social-icon social-icon--tiktok"
+            aria-label="TikTok">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.34-6.34V8.69a8.18 8.18 0 004.78 1.52V6.76a4.85 4.85 0 01-1.02-.07z" />
+            </svg>
+          </a>
+          <a href="https://www.youtube.com/@nalucantora" target="_blank" class="social-icon social-icon--youtube"
+            aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© 2025 NALU — Todos os direitos reservados.</p>
+        <p>Feito com 💜 para os fãs da Nalu.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating social sidebar -->
+  <div class="social-sidebar">
+    <a href="https://open.spotify.com/intl-pt/artist/446zGftjfP5j2EfU2kc4OM" target="_blank"
+      class="social-sidebar__item social-icon--spotify" aria-label="Spotify">
+      <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+        <path
+          d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z" />
+      </svg>
+    </a>
+    <a href="https://www.instagram.com/nalucantora/" target="_blank" class="social-sidebar__item social-icon--instagram"
+      aria-label="Instagram">
+      <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+        <path
+          d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+      </svg>
+    </a>
+    <a href="https://www.tiktok.com/@nalucantora" target="_blank" class="social-sidebar__item social-icon--tiktok"
+      aria-label="TikTok">
+      <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+        <path
+          d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.34-6.34V8.69a8.18 8.18 0 004.78 1.52V6.76a4.85 4.85 0 01-1.02-.07z" />
+      </svg>
+    </a>
+    <a href="https://www.youtube.com/@nalucantora" target="_blank" class="social-sidebar__item social-icon--youtube"
+      aria-label="YouTube">
+      <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+        <path
+          d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+      </svg>
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
